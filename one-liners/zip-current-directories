@@ -1,0 +1,1 @@
+ls -tlrh | awk '{print substr($9, 0, 2)}' | xargs -I{} zip -r {}.zip {}
